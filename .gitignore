@@ -1,0 +1,15 @@
+!vendor/gems/cache/
+.*.sw*
+.buildpath
+.byebug_history
+.DS_Store
+.env
+.env.local
+.idea
+.project
+.sass-cache/*
+.settings
+db/*.db
+log/**/*
+tmp/**/*
+vendor/gems/*
