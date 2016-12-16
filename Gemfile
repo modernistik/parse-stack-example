@@ -1,8 +1,6 @@
 # Gemfile
 source "http://rubygems.org"
 
-ruby '2.3.0'
-
 # Server requirements
 gem 'puma'
 gem 'puma-heroku'

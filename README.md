@@ -1,4 +1,4 @@
-# Parse-Stack Rack Example
+# Parse Server with Ruby Rack Example
 This is a sample application to showcase using the ruby [Parse-Stack](https://github.com/modernistik/parse-stack) gem with [Parse-Server](https://github.com/ParsePlatform/parse-server).
 
 ## Getting Started
