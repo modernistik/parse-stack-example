@@ -9,7 +9,7 @@ gem 'dotenv'
 gem 'rake'
 
 # Project requirements
-gem 'parse-stack'
+gem 'parse-stack', git: 'https://github.com/modernistik/parse-stack.git'
 
 group :development do
   gem 'byebug'

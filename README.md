@@ -14,7 +14,10 @@ Edit the `config/parse.rb` file so that it is configured with your Parse-Server 
 PARSE_APP_ID=<YOUR_APP_ID>
 PARSE_API_KEY=<YOUR_API_ID>
 PARSE_MASTER_KEY=<YOUR_MASTER_KEY>
-PARSE_SERVER_URL=https://api.parse.com/1
+PARSE_SERVER_URL=http://localhost:1337/parse
+# Below is the accessible URL for this Rack server
+# When running locally, it is localhost:3000
+HOOKS_URL=<http://localhost:3000/>
 ```
 
 ### Upgrade Your Schema
@@ -43,9 +46,15 @@ Now you are ready to go! Try running the `rake console` command and perform a fe
     Song.first :artist => franky
 ```
 
-## Run Webhooks Server
-You can have this rack application handle incoming Parse webhooks based on what you have defined in the `webhooks` folder. To start the server use:
 
+## Run Webhooks Server
+You can have this rack application handle incoming Parse webhooks based on what you have defined in the `webhooks` folder. Make sure you already have a Parse-Server running. To start this server use:
+
+```bash
+    # Register webhooks
+    $ rake parse:webhooks:register
+    # Start the server
     $ rake start
+```
 
 This will start the rack server and begin handling requests from your Parse-Server. You can automatically have Parse-Stack register your defined webhooks with your Parse-Server with the task `rake parse:webhooks:register` after you have defined a valid `HOOKS_URL` environment variable.

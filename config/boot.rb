@@ -11,8 +11,8 @@ require_relative 'parse'
 
 puts "\n-----------------------------------"
 puts "RACK_ENV : #{RACK_ENV}"
-puts "SERVER   : #{Parse::Client.session.server_url}"
-puts "PARSE    : #{Parse::Client.session.app_id}"
+puts "SERVER   : #{Parse::Client.client.server_url}"
+puts "PARSE    : #{Parse::Client.client.app_id}"
 puts "-----------------------------------\n"
 
 Dir[__dir__ + '/../models/**/*.rb'].each { |f| require(f) }

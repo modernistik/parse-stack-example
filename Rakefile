@@ -1,7 +1,8 @@
 require 'bundler/setup'
 require 'rake'
 require 'parse/stack/tasks'
-
+# Loads all and register all the defined webhooks
+require_relative 'webhooks/all'
 # Load Parse::Stack tasks
 Parse::Stack.load_tasks
 
