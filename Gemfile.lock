@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/modernistik/parse-stack.git
-  revision: 02799a337ccd45f1595de8341df15f8ed9edcd2d
+  revision: a2d642841e86ac482bdc20c875908e1edd16e4d3
   specs:
-    parse-stack (1.9.0)
+    parse-stack (2.0.0)
       active_model_serializers (>= 0.9, < 1)
       activemodel (>= 5, < 7)
       activesupport (>= 5, < 7)
